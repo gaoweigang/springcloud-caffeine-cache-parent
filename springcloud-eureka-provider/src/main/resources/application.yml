@@ -18,5 +18,24 @@ eureka:
         enable: true
 
 
+caffeine-cache:
+  item:
+  - cache-name: productUpDownCount
+  - cache-name: productList
+    expire-seconds: 600
+  - cache-name: skuList
+    expire-seconds: 600
+  - cache-name: cacheMemberList
+    expire-seconds: 600
+  - cache-name: activityList
+    expire-seconds: 300
+  - cache-name: activitySkuSet
+  - cache-name: productInfo
+    max-size: 10000
+    expire-seconds: 600
+  - cache-name: productSize
+    expire-seconds: 10800
+
+
 
 msg: Hello
